@@ -2,6 +2,9 @@ from langchain_community.document_loaders import DirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import SentenceTransformerEmbeddings
 from langchain_community.vectorstores import Chroma
+import os
+current_dir = os.path.dirname(os.path.abspath(__file__))
+db_yolu = os.path.join(current_dir, "db_klasor_adiniz")
 import re
 import os
 
